@@ -9,8 +9,9 @@ $stdin.gets
 puts "Opening the file..."
 target = open(filename, "w")
 
-puts "Truncating the file. Goodbye!"
-target.truncate(0)
+# not needed per study drill 5
+# puts "Truncating the file. Goodbye!"
+# target.truncate(0)
 
 puts "Now I'm going to ask you for 3 lines."
 
@@ -23,12 +24,14 @@ line3 = $stdin.gets.chomp
 
 puts "I'm going to write these to the file."
 
-target.write(line1)
-target.write("\n")
-target.write(line2)
-target.write("\n")
-target.write(line3)
-target.write("\n")
+# study drill 3
+target.write(line1 + "\n" + line2 + "\n" + line3 + "\n")
 
 puts "And finally, we close it."
 target.close
+
+# study drill 2
+puts "Enjoy what you wrote earlier."
+target = open(filename)
+puts "Here's your file #{filename}."
+print target.read
