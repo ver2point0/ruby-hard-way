@@ -18,6 +18,16 @@
 # >(greater-than): used to check if x is greater than y
 
 # EXERCISE 4
+# me = 100: 100 is stored in me
+# car_space = 2: 2 is stored in car_space
+# cars = 10: 10 is stored in cars
+# people = 50: 50 is stored in people
+# puts "I am #{me}"
+# puts "My car has room for #{car_space}"
+# puts "There are #{cars} cars available to drive"
+# puts "There are #{people} people who need rides"
+
+# EXERCISE 5
 # my_number = 5: 5 is stored in variable name my_number
 # my_char = 'a': a is stored in variable name my_char
 # my_string = "Hi, how are you?": "Hi, how are you?" is stored in variable name my_string
