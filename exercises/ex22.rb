@@ -76,7 +76,21 @@
 # print end1 + end2 + end3 + end4 + end5 + end6
 # puts end7 + end8 + end9 + end10 + end11 + end12
 
+# EXERCISE 8
+# create a format string using values by their names instead of variables
+# formatter = "%{first} %{second} %{third} %{fourth}"
 
+# puts formatter % {first: 1, second: 2, third: 3, fourth: 4 }
+# puts formatter % {first: "one", second: "two", third: "three", fourth: "four" }
+# puts formatter % {first: true, second: false, third: true, fourth: false }
+# puts formatter % {first: formatter, second: formatter, third: formatter, fourth: formatter }
+
+# puts formatter % {
+#   first: "I had this string.",
+#   second: "That you could type up right.",
+#   third: "But it didn't sing.",
+#   fourth: "So I said goodnight."
+# }
 
 
 
