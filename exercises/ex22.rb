@@ -94,25 +94,36 @@
 
 # EXERCISE 9
 # Here's some strange new stuff, remember type it exactly.
-days = "Mon Tue Wed Thu Fri Sat Sun"
-months = "Jan\nFeb\nMar\nApr\nMay\nJun\nJul\nAug"
-puts "Here are the days: #{days}"
-puts "Here are the months: #{months}"
-puts """
-There's something going on here.
-With the three double-quotes.
-We'll be able to type as much as we like.
-Even 4 lines if we want, or 5, or 6.
-"""
+# days = "Mon Tue Wed Thu Fri Sat Sun"
+# months = "Jan\nFeb\nMar\nApr\nMay\nJun\nJul\nAug"
+# puts "Here are the days: #{days}"
+# puts "Here are the months: #{months}"
+# puts """
+# There's something going on here.
+# With the three double-quotes.
+# We'll be able to type as much as we like.
+# Even 4 lines if we want, or 5, or 6.
+# """
 
+# EXERCISE 10
+# tabs t_cat's value
+# t_cat = "\ttabbed in"
+# splits p_cat's value on a line
+# p_cat = "split\non a line"
+# inserts backslashes into b_cat's string
+# b_cat = "I'm \\ a \\ cat"
+# make a list with tabs
+# f_cat = """
+# I'll do a list:
+# \t* cat food
+# \t* fish
+# \t* litter\n\t* toys
+# """
 
-
-
-
-
-
-
-
+# puts t_cat
+# puts p_cat
+# puts b_cat
+# puts f_cat
 
 
 
