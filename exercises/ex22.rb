@@ -125,7 +125,13 @@
 # puts b_cat
 # puts f_cat
 
-
-
+# EXERCISE 11
+# print "How old are you?"
+# age = get.chomp
+# print "How tall are you?"
+# height = gets.chomp
+# print "How much do you weigh?"
+# weight = gets.chomp
+# puts "So, you're #{age} years old, #{height} tall and #{weight} heavy."
 
 
