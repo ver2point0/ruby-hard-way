@@ -155,22 +155,36 @@
 # puts "Your 3rd variable is: #{three}"
 
 # EXERCISE 14
-username = ARGV.first
-prompt = "= "
+# username = ARGV.first
+# prompt = "= "
 
-puts "Hi #{username}."
-puts "I'd like to ask you a few questions."
-puts "Do you like me #{username}? ", prompt
-likes = $stdin.gets.chomp
+# puts "Hi #{username}."
+# puts "I'd like to ask you a few questions."
+# puts "Do you like me #{username}? ", prompt
+# likes = $stdin.gets.chomp
 
-puts "Where do you live #{username}? ", prompt
-lives = $stdin.gets.chomp
+# puts "Where do you live #{username}? ", prompt
+# lives = $stdin.gets.chomp
 
-puts "What kind of computer do you have? ", prompt
-computer = $stdin.gets.chomp
+# puts "What kind of computer do you have? ", prompt
+# computer = $stdin.gets.chomp
 
-puts """
-Alright, so you said #{likes} about liking me.
-You live in #{lives}. Not sure where that is.
-And you have a #{computer} computer. Nice.
-"""
+# puts """
+# Alright, so you said #{likes} about liking me.
+# You live in #{lives}. Not sure where that is.
+# And you have a #{computer} computer. Nice.
+# """
+
+# EXERCISE 15
+filename = ARGV.first
+txt = open(filename)
+
+puts "Here's your file #{filename}:"
+print txt.read
+
+print "Type the filename again: "
+file_again = $stdin.gets.chomp
+
+txt_again = open(file_again)
+
+print txt_again.read
