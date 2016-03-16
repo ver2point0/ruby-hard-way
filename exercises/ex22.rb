@@ -176,15 +176,52 @@
 # """
 
 # EXERCISE 15
-filename = ARGV.first
-txt = open(filename)
+# filename = ARGV.first
+# txt = open(filename)
 
-puts "Here's your file #{filename}:"
-print txt.read
+# puts "Here's your file #{filename}:"
+# print txt.read
 
-print "Type the filename again: "
-file_again = $stdin.gets.chomp
+# print "Type the filename again: "
+# file_again = $stdin.gets.chomp
 
-txt_again = open(file_again)
+# txt_again = open(file_again)
 
-print txt_again.read
+# print txt_again.read
+
+# EXERCISE 16
+# filename = ARGV.first
+
+# puts "Erase #{filename}"
+# puts "Hit CTRL-C (^C) to cancel erasure."
+# puts "Hit RETURN to accept."
+
+# $stdin.gets
+
+# puts "Open file..."
+# t = open(filename, "w")
+
+# puts "Truncate file. Goodbye!"
+# t.truncate(0)
+
+# puts "I want 3 lines from you."
+
+# print "line 1: "
+# l1 = $stdin.gets.chomp
+# print "line 2: "
+# l2 = $stdin.gets.chomp
+# print "line 3: "
+# l3 = $stdin.gets.chomp
+
+# puts "Write lines to the file."
+
+# t.write(l1)
+# t.write("\n")
+# t.write(l2)
+# t.write("\n")
+# t.write(l3)
+# t.write("\n")
+
+# puts "Close file."
+# t.close
+
