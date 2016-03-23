@@ -246,24 +246,48 @@
 # in_file.close
 
 # EXERCISE 18
-def print_two(*args)
-  arg1, arg2 = args
-  puts "arg1: #{arg1}, arg2: #{arg2}"
+# def print_two(*args)
+#   arg1, arg2 = args
+#   puts "arg1: #{arg1}, arg2: #{arg2}"
+# end
+
+# def print_two_again(arg1, arg2)
+#   puts "arg1: #{arg1}, arg2: #{arg2}"
+# end
+
+# def print_one(arg1)
+#   puts "arg1: #{arg1}"
+# end
+
+# def print_none()
+#   puts "I have nothing."
+# end
+
+# print_two("a", "b")
+# print_two_again("c", "d")
+# print_one("Me")
+# print_none()
+
+# EXERCISE 19
+def cheese_crackers(count, boxes)
+  puts "You have #{count} cheeses!"
+  puts "You have #{boxes} boxes of crackers!"
+  puts "Man that's enough for a party!"
+  puts "Get a blanket.\n"
 end
 
-def print_two_again(arg1, arg2)
-  puts "arg1: #{arg1}, arg2: #{arg2}"
-end
+puts "We can just give the function numbers directly:"
+cheese_crackers(20, 30)
 
-def print_one(arg1)
-  puts "arg1: #{arg1}"
-end
+puts "OR, we can use variables from our script:"
+cheese = 10
+crackers = 50
 
-def print_none()
-  puts "I have nothing."
-end
+cheese_crackers(cheese, crackers)
 
-print_two("a", "b")
-print_two_again("c", "d")
-print_one("Me")
-print_none()
+puts "We can even do math inside too:"
+cheese_crackers(10 + 20, 5 + 6)
+
+puts "And we can combine the two, variables and math:"
+cheese_crackers(cheese + 100, crackers + 1000)
+
