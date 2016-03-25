@@ -269,25 +269,67 @@
 # print_none()
 
 # EXERCISE 19
-def cheese_crackers(count, boxes)
-  puts "You have #{count} cheeses!"
-  puts "You have #{boxes} boxes of crackers!"
-  puts "Man that's enough for a party!"
-  puts "Get a blanket.\n"
+# def cheese_crackers(count, boxes)
+#   puts "You have #{count} cheeses!"
+#   puts "You have #{boxes} boxes of crackers!"
+#   puts "Man that's enough for a party!"
+#   puts "Get a blanket.\n"
+# end
+
+# puts "We can just give the function numbers directly:"
+# cheese_crackers(20, 30)
+
+# puts "OR, we can use variables from our script:"
+# cheese = 10
+# crackers = 50
+
+# cheese_crackers(cheese, crackers)
+
+# puts "We can even do math inside too:"
+# cheese_crackers(10 + 20, 5 + 6)
+
+# puts "And we can combine the two, variables and math:"
+# cheese_crackers(cheese + 100, crackers + 1000)
+
+# EXERCISE 20
+input_file = ARGV.first
+
+def print_all(f)
+  puts f.read
 end
 
-puts "We can just give the function numbers directly:"
-cheese_crackers(20, 30)
+def rewind(f)
+  f.seek(0)
+end
 
-puts "OR, we can use variables from our script:"
-cheese = 10
-crackers = 50
+def print_a_line(line_count, f)
+  puts "#{line_count}, #{f.gets.chomp}"
+end
 
-cheese_crackers(cheese, crackers)
+current_file = open(input_file)
 
-puts "We can even do math inside too:"
-cheese_crackers(10 + 20, 5 + 6)
+puts "First let's print the whole file:\n"
 
-puts "And we can combine the two, variables and math:"
-cheese_crackers(cheese + 100, crackers + 1000)
+print_all(current_file)
+
+puts "Now let's rewind, kind of like a tape."
+
+rewind(current_file)
+
+puts "Let's print three lines:"
+
+current_line = 1
+print_a_line(current_line, current_file)
+
+current_line = current_line + 1
+print_a_line(current_line, current_file)
+
+current_line = current_line + 1
+print_a_line(current_line, current_file)
+
+
+
+
+
+
 
