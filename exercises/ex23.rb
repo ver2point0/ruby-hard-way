@@ -65,22 +65,8 @@
 
 # bugged_concatenate.rb
 
-def bugged_concatenate(array)
-  puts array.inject("") { |output, element| output + element}.upcase
-end
+# def bugged_concatenate(array)
+#   puts array.inject("") { |output, element| output + element}.upcase
+# end
 
-bugged_concatenate([1.to_s, "9", 84.to_s, " ", "George Orwell"])
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# bugged_concatenate([1.to_s, "9", 84.to_s, " ", "George Orwell"])
