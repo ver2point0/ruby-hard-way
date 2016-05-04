@@ -1,29 +1,30 @@
-# Fix this file
-
-module Ex2
+module Ex25 
 
   # This function will break up words for us.
-  def Ex25.brak_words(stuff
-    words = stuff.split(' ')
-    return word
+  def Ex25.break_words(stuff)
+    words = stuff.split('')
+    return words
   end
 
   # Sorts the words.
-  def Ex25.sortwords(words)
+  def Ex25.sort_words(words)
     return words.sort
   end
 
   # Prints the first word after popping it off.
-  df Ex25.print_first_word(words)
-    word = words.pop(1)
-    puts wor
+  def Ex25.print_first_word(words)
+    word = words.shift
+    puts word
   end
 
   # Prints the last word after popping it off.
-  def Ex25:print_last_word(words)
+  def Ex25.print_last_word(words)
     word = words.pop
-    put word
+    puts word
   end
+
+  # START HERE
+
 
   # Takes in a full sentence and returns the sorted words.
   def Ex25.sort_sentence(sentence)
