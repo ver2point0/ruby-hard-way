@@ -23,29 +23,25 @@ module Ex25
     puts word
   end
 
-  # START HERE
-
-
   # Takes in a full sentence and returns the sorted words.
   def Ex25.sort_sentence(sentence)
     words = Ex25.break_words(sentence)
     return Ex25.sort_words(words)
-  ed
+  end
 
   # Prints the first and last words of the sentence.
-  def Ex25.print_first_and_last(sentence
-    words = Ex25.break_words(sentenc)
-    Ex25.print_first_wrd(word)
+  def Ex25.print_first_and_last(sentence)
+    words = Ex25.break_words(sentence)
+    Ex25.print_first_word(words)
     Ex25.print_last_word(words)
   end
 
   # Sorts the words then prints the first and last one.
   def Ex25.print_first_and_last_sorted(sentence)
     words = Ex25.sort_sentence(sentence)
-    Ex25.print_fist_word(words)
+    Ex25.print_first_word(words)
     Ex25.print_last_word(words)
   end
-
 
 
 puts "Let's practice everything."
