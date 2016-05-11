@@ -6,3 +6,9 @@
 # NOT   true?
 !false  # true
 !true   # false
+
+# OR(||)        true?
+true || false   # true
+true || true    # true
+false || true   # true
+false || false  # false
