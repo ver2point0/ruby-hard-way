@@ -18,3 +18,9 @@ true && false   # false
 true && true    # true
 false && true   # false
 false && false  # false
+
+# NOT OR (||)        true?
+not (true || false)  # false
+not (true || true)   # false
+not (false || true)  # false
+not (false || false) # true
