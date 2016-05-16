@@ -30,3 +30,9 @@ not (true && false)   # true
 not (true && true)    # false
 not (false && true)   # true
 not (false && false)  # true
+
+# !=    true?
+1 != 0  # true
+1 != 1  # false
+0 != 1  # true
+0 != 0  # false
