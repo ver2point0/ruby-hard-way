@@ -24,3 +24,9 @@ not (true || false)  # false
 not (true || true)   # false
 not (false || true)  # false
 not (false || false) # true
+
+# NOT AND (&&)        true?
+not (true && false)   # true
+not (true && true)    # false
+not (false && true)   # true
+not (false && false)  # true
