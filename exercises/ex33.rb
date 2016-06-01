@@ -10,3 +10,8 @@ while i < 6
   puts "At the bottom i is #{i}"
 end
 
+puts "The numbers: "
+
+numbers.each { |num|
+  puts num
+}
