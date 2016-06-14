@@ -2,8 +2,13 @@
 # 6 rooms, 10 doors, 1 mini boss, 1 normal boss
 
 def room_one
-  puts "You've entered room Room One."
-  exit(0)
+  puts "You've entered room one."
+  puts "It seems rather ordinary except it has 3 doors:"
+  puts "door II is (N)orth, door III is (E)ast, and door IV is (W)est."
+  puts "Which direction do you take?"
+  
+  print "> "
+  choice = $stdin.gets.chomp
 end
 
 def room_two
