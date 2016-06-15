@@ -9,6 +9,17 @@ def room_one
   
   print "> "
   choice = $stdin.gets.chomp
+  
+  if (choice === "N" || choice === "n")
+    # do something
+  elsif (choice === "E" || choice === "e")
+    # do something
+  elsif (choice === "W" || choice === "w")
+    # do something
+  else
+    # do something
+  end
+      
 end
 
 def room_two
