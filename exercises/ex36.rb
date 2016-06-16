@@ -11,24 +11,29 @@ def room_one
   choice = $stdin.gets.chomp
   
   if (choice === "N" || choice === "n")
-    # do something
+    room_two
   elsif (choice === "E" || choice === "e")
-    # do something
+    room_three
   elsif (choice === "W" || choice === "w")
-    # do something
+    room_four
   else
-    # do something
+    dead("You succumb to random trap in the room.")
   end
-      
 end
 
 def room_two
+  puts "You're in room two."
+  exit(0)
 end
 
 def room_three
+  puts "You're in room three."
+  exit(0)
 end
 
 def room_four
+  puts "You're in room four."
+  exit(0)
 end
 
 def room_five
