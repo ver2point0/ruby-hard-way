@@ -40,6 +40,34 @@ end
 def some_function()
 end
 
+# defined?: is this class/function/etc. defined already?
+defined? Class == "constant"
+
+# do: create a block to maybe takes a parameter
+(0..5).each do |x|
+  puts x
+end
+
+# else: else conditional
+if some_x
+elsif some_y
+else
+end
+
+# end: ends blocks, functions, classes, everything
+begin
+end # many others
+
+# ensure: run this code whether an exception happens or not
+begin 
+  ensure
+end
+
+# for: for loop syntax. the .each is syntax is preferred
+for some_x in some_y
+end
+  
+    
 
 # data types
 
