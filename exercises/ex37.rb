@@ -67,7 +67,55 @@ end
 for some_x in some_y
 end
   
-    
+# if: if conditional
+if some_x
+end 
+
+# in: in part of for-loops
+for some_x in some_y 
+end
+
+# module: define a new module
+module Modx
+end 
+
+# next: skip to the next element of a .each iterator
+(0..5).each { |y|
+  next
+}
+
+# not: logical not, but used ! instead
+not true == false
+
+# or: logical or
+puts "Hello" or "Goodbye"
+
+# redo: rerun a code block exactly the same
+(0..5).each { |i|
+  redo if i > 2
+}
+
+# rescue: run this code if an exception happens
+begin
+  rescue x 
+end 
+
+# retry: in a rescue clause, says to try the block again
+(0..5).each { |i| 
+
+  retry if i > 2
+}
+
+# return: returns a value from a function. mostly optional
+return x
+
+# self: the current object, class, or module
+defined? self == "self"
+
+# super: the parent class of this class
+super
+
+
 
 # data types
 
