@@ -1,6 +1,6 @@
 # symbol review: due 6/27
 
-# keywords
+# KEYWORDS
 # BEGIN: run this block when the script starts
 BEGIN { 
   puts "hi" 
@@ -115,10 +115,38 @@ defined? self == "self"
 # super: the parent class of this class
 super
 
+# then: can be used with if optionally
+if true then
+  puts "hi"
+end
 
+# undef: remove a function definition from a class
+undef some_x
 
-# data types
+# unless: inverse of if
+unless false then
+  puts "not"
+end 
 
-# string escape sequences
+# until: inverse of while, execute block as long as false
+until false
+end
 
-# operators
+# when: part of case conditionals
+case some_x
+  when some_y
+else
+end
+
+# while: while loop
+while true
+end
+
+# yield: pause and transfer control to the code block
+yield
+
+# DATA TYPES
+
+# STRING ESCAPE SEQUENCES
+
+# OPERATORS
