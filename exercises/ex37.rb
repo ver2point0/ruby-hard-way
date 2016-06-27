@@ -146,6 +146,29 @@ end
 yield
 
 # DATA TYPES
+# true: true boolean value
+true or false == true
+
+# false: false boolean value
+false and true == false
+
+# nil: represents "nothing" or "no value"
+x = nil
+
+# strings: store textual information
+x = "hello"
+
+# numbers: stores integers
+i = 100
+
+# floats: stores decimals
+i = 10.389
+
+# arrays: stores a list of things
+j = [1, 2, 3, 4]
+
+# hashes: stores a key=value mapping of things
+e = {'x' => 1, 'y' => 2}
 
 # STRING ESCAPE SEQUENCES
 
