@@ -102,7 +102,6 @@ end
 
 # retry: in a rescue clause, says to try the block again
 (0..5).each { |i| 
-
   retry if i > 2
 }
 
@@ -171,5 +170,15 @@ j = [1, 2, 3, 4]
 e = {'x' => 1, 'y' => 2}
 
 # STRING ESCAPE SEQUENCES
+s1 = "\\ this is a string" 
+s2 = "\' this is a string"
+s3 = "\" this is a string"
+s4 = "\a this is a string"
+s5 = "\b this is a string"
+s6 = "\f this is a string"
+s7 = "\n this is a string"
+s8 = "\r this is a string"
+s9 = "\t this is a string"
+s10 = "\v this is a string"
 
 # OPERATORS
