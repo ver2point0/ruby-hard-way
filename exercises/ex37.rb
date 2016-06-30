@@ -182,3 +182,42 @@ s9 = "\t this is a string"
 s10 = "\v this is a string"
 
 # OPERATORS
+var1 = 2
+var2 = 4
+
+# add: +
+add = var1 + var2
+
+# subtract: -
+subt = var1 - var2
+
+# multiply: *
+mul = var1 * var2
+
+# power of: **
+pow = var1 ** var2
+
+# divide: /
+div = var1 / var2
+
+# modulus: %
+mod = var1 % var2
+
+# dot access: .
+dot = "20".to_i
+
+# colon access: ::
+Module::Class
+
+# list brackets: []
+[1, 2, 3, 4]
+
+# Not: !
+!true
+
+# less than: <
+less = var1 < var2
+
+# greater than: >
+greater = var1 > var2
+
