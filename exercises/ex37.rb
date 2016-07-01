@@ -221,3 +221,41 @@ less = var1 < var2
 # greater than: >
 greater = var1 > var2
 
+# greater than equal: >=
+greater_than = var1 >= var2
+
+# less than equal: <=
+less_than = var1 <= var2
+
+# comparison: <=>
+comparison = var1 <=> var2
+
+# equal: ==
+eql = var1 == var2
+
+# equality: ===
+eqly = var1 === var2
+
+# not equal: !=
+not_equal = var1 != var2
+
+# logical and (higher precedence): &&
+log_and = var1 && var2
+
+# logical or (higher precedence): ||
+log_or = var1 || var2
+
+# range inclusive: ..
+range_include = (0..3).to_a == [0, 1, 2, 3]
+
+# range non-clusive: ...
+range_exclude = (0...3).to_a == [0, 1, 2,]
+
+# object scope: @
+@var
+
+# class scope: @@
+@@classvar
+
+# global scope: $
+$stdin
