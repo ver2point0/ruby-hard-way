@@ -11,3 +11,22 @@
 # is-a: a phrase to say that something inherits from another, as in a "salmon" is-a "fish"
 # has-a: a phrase to say that soemting is composed of other things or has a trait, as in "a salmon has-a mouth"
 
+# Phrase drills
+
+class X < Y
+  "Make a class named X that is-a Y."
+
+class X: def initialize(J)
+  "class X has-a initialize that takes a J parameter."
+
+class X: def M(J)
+  "class X has-a function named M that takes a J parameter."
+  
+foo = X()
+  "Set foo to an instance of class X"
+  
+foo.M(J)
+  "From foo get the M function, and call it with parameter J."
+  
+foo.K = Q
+  "From foo get the K attribute and set it to Q."
