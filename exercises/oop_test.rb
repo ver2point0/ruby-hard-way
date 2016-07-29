@@ -28,14 +28,27 @@ def craft_names(rand_words, snippet, pattern, caps=false)
 end
 
 def craft_params(rand_words, snippet, pattern)
-  names = ().map do
+  names = (0...snippet.scan(pattern).length).map do
+    param_count = rand(3) + 1
+    params = (0...param_count).map { |x| rand_words.pop() }
+    params.join(', ')
   end
   
   return names * 2
 end
 
-def convert()
+def convert(snippet, phrase)
+  rand_words =
+  class_names = 
+  others_names =
+  param_names =
   
+  results = []
+  
+  [snippet, phrase].each do |sentence| 
+  end
+  
+  return results
 end
 
 loop do
