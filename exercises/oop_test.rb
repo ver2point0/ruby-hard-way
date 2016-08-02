@@ -38,14 +38,24 @@ def craft_params(rand_words, snippet, pattern)
 end
 
 def convert(snippet, phrase)
-  rand_words =
-  class_names = 
-  others_names =
-  param_names =
+  rand_words = WORDS.sort_by {rand}
+  class_names = craft_names(rand_words, snippet, /###/, caps=true)
+  others_names = craft_names(rand_words, snippet, /\*\*\*/)
+  param_names = craft_names(rand_words, snippet, /@@@/)
   
   results = []
   
   [snippet, phrase].each do |sentence| 
+    # fake class names, also copies sentence
+    result = sentence.gsub(/###/) { |x| class_names.pop }
+    
+    # fake other names
+    result.gsub!(/\*\*\*/) { |x| others_names.pop }
+    
+    # fake parameter lists
+    result.gsub!(/@@@/) { |x| param_names.pop }
+    
+    results.push(result)
   end
   
   return results
@@ -54,3 +64,36 @@ end
 loop do
   
 end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
