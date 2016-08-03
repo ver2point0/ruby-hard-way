@@ -61,39 +61,23 @@ def convert(snippet, phrase)
   return results
 end
 
+# keep going until they hit CTRL-D
 loop do
+  snippets = PHRASE.keys().sort_by {rand}
   
+  for snippet in snippets
+    phrase = PHRASES[snippet]
+    question, answer = convert(snippet, phrase)
+    
+    if PHRASE_FIRST
+      question, answer = answer, question
+    end
+    
+    print question, "\n\n> "
+    
+    exit(0) unless $stdin.gets
+    
+    puts "\nANSWER: %s\n\n" % answer
+    
+  end
 end
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
