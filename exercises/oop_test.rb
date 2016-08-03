@@ -63,7 +63,7 @@ end
 
 # keep going until they hit CTRL-D
 loop do
-  snippets = PHRASE.keys().sort_by {rand}
+  snippets = PHRASES.keys().sort_by {rand}
   
   for snippet in snippets
     phrase = PHRASES[snippet]
