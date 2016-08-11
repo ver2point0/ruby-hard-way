@@ -32,4 +32,26 @@ class Person
   attr_accessor :pet
 end
 
+# Employee is-a person
+class Employee < Person
+  
+  def initialize(name, salary)
+    # Employee has-a name, using Person class' attribute
+    super(name)
+    
+    # Employee has-a salary
+    @salary = salary
+  end
+end
 
+# Fish is-a object
+class Fish
+end
+
+# Salmon is-a Fish
+class Salmon < Fish
+end
+
+# Halibut is-a Fish
+class Halibut < Fish
+end
