@@ -55,3 +55,30 @@ end
 # Halibut is-a Fish
 class Halibut < Fish
 end
+
+# rover is-a Dog
+rover = Dog.new("Rover")
+
+# satan is-a Cat
+satan = Cat.new("Satan")
+
+# mary is-a person
+mary = Person.new("Mary")
+
+# mary has-a pet cat named satan
+mary.pet = satan
+
+# frank is-a employee
+frank = Employee.new("Frank", 120000)
+
+# frank has-a pet dog name rover
+frank.pet = rover
+
+# flipper is-a fish
+flipper = Fish.new()
+
+# crouse is-a salmon
+crouse = Salmon.new()
+
+# harry is-a halibut
+harry = Halibut.new()
