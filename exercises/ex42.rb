@@ -1,5 +1,9 @@
 # Animal is-a object look at the extra credit
 class Animal
+  
+  def speak(voice)
+    puts "#{voice}"
+  end
 end
 
 # Dog is-a Animal
@@ -29,6 +33,16 @@ class Person
     @pet = nil
   end
   
+  def hours_worked(number)
+    if (number < 40)
+      puts "You've worked #{number} hours this week. You have #{40 - number} hours to go."
+    elsif (number == 40)
+      puts "You've worked a full week. Great job!"
+    else
+      puts "You work too much. Go home!"
+    end
+  end
+  
   attr_accessor :pet
 end
 
@@ -46,6 +60,10 @@ end
 
 # Fish is-a object
 class Fish
+  
+  def swim(distance)
+    puts "I swam #{distance} miles today!"
+  end
 end
 
 # Salmon is-a Fish
@@ -71,6 +89,9 @@ mary.pet = satan
 # frank is-a employee
 frank = Employee.new("Frank", 120000)
 
+# Tim is-a employee
+tim = Employee.new("Tim", 500000)
+
 # frank has-a pet dog name rover
 frank.pet = rover
 
@@ -82,3 +103,12 @@ crouse = Salmon.new()
 
 # harry is-a halibut
 harry = Halibut.new()
+
+rover.speak("Bark!")
+satan.speak("Meow!")
+flipper.swim(10)
+crouse.swim(1000)
+harry.swim(10000)
+tim.hours_worked(100)
+mary.hours_worked(40)
+frank.hours_worked(30)
