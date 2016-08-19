@@ -61,6 +61,37 @@ end
 class CentralCorridor < Scene
   
   def enter()
+    puts "The Gothons of Planet Percal #25 have invaded your ship and destroyed"
+    puts "your entire crew. You are the last surviving member and your last"
+    puts "mission is to get the neutron destruct bomb from the Weapons Armory,"
+    puts "put it in the bridge, and blow the ship up after getting into an"
+    puts "escape pod."
+    puts "\n"
+    
+    
+    print"> "
+    
+    action = $stdin.gets.chomp
+    
+    if (action == "shoot!")
+      puts ""
+      
+      return 'death'
+      
+    elsif (action == "dodge!")
+      puts ""
+      
+      return 'death'
+      
+    elsif (action == "tell a joke")
+      puts ""
+      
+      return 'laser_weapon_armory'
+    
+    else
+      puts "DOES NOT COMPUTE!"
+      return 'central_corridor'
+    end
   end
 end
 
