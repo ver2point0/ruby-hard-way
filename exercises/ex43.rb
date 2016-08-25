@@ -113,7 +113,7 @@ end
 class LaserWeaponArmory < Scene
   
   def enter()
-    puts ""
+    puts "You do a dive roll into the Weapon Armory, crouch and scan the room"
     puts ""
     puts ""
     puts ""
@@ -126,18 +126,22 @@ class LaserWeaponArmory < Scene
     guesses = 0
     
     while (guess != code && guesses < 10)
+      puts "BZZZZEDDD!"
+      guesses += 1
+      print "[keypad]> "
+      guess = $stdin.gets.chomp
     end
     
     if (guess == code)
-      puts ""
-      puts ""
-      puts ""
+      puts "The container clicks open and the seal breaks, letting gas out."
+      puts "You grab the neutron bomb and run as fast as you can to the"
+      puts "bridge where you must place it in the right spot."
       return 'the_bridge'
     else
-      puts ""
-      puts ""
-      puts ""
-      puts ""
+      puts "The lock buzzes one last time and then you hear a sickening"
+      puts "melting sound as the mechanism is fused together."
+      puts "You decide to sit there, and finally the Gothons blow up the"
+      puts "ship from their ship and you die."
       return 'death'
     end
   end
