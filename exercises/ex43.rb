@@ -114,12 +114,12 @@ class LaserWeaponArmory < Scene
   
   def enter()
     puts "You do a dive roll into the Weapon Armory, crouch and scan the room"
-    puts ""
-    puts ""
-    puts ""
-    puts ""
-    puts ""
-    puts ""
+    puts "for more Gothons that might be hiding. It's dead quiet, too quiet."
+    puts "You stand up and run to the far side of the room and find the"
+    puts "neutron bomb in its container. There's a keypad lock on the box"
+    puts "and you need the code to get the bomb out. If you get the code"
+    puts "wrong 10 times then the lock closes forever and you can't"
+    puts "get the bomb. The code is 3 digits."
     code = "#{rand(1..9)}#{rand(1..9)}#{rand(1..9)}"
     print "[keypad]> "
     guess = $stdin.gets.chomp
