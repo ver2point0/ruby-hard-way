@@ -151,6 +151,39 @@ end
 class TheBridge < Scene
   
   def enter()
+    puts ""
+    puts ""
+    puts ""
+    puts ""
+    puts ""
+    puts ""
+    print "> "
+    
+    action = $stdin.gets.chomp
+    
+    if (action == "throw the bomb")
+      puts ""
+      puts ""
+      puts ""
+      puts ""
+      puts ""
+      puts ""
+      return 'death'
+      
+    elsif (action == "slowly place the bomb")
+      puts ""
+      puts ""
+      puts ""
+      puts ""
+      puts ""
+      puts ""
+      puts ""
+      puts ""
+      return 'escape_pod'
+    else
+      puts "DOES NOT COMPUTE"
+      return "the_bridge"
+    end
   end
 end
 
