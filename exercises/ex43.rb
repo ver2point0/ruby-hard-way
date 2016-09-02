@@ -151,12 +151,12 @@ end
 class TheBridge < Scene
   
   def enter()
-    puts ""
-    puts ""
-    puts ""
-    puts ""
-    puts ""
-    puts ""
+    puts "You burst onto the Bridge with the neutron destruct bomb"
+    puts "under you arm and surprise 5 Gothons who are trying to"
+    puts "take control of the ship. Each of them has an evn uglier"
+    puts "clown costume than the last. They haven't puller their"
+    puts "weapons out yet, as they see the active bomb under your"
+    puts "arm and don't want to set it off."
     print "> "
     
     action = $stdin.gets.chomp
@@ -185,6 +185,7 @@ class TheBridge < Scene
       return "the_bridge"
     end
   end
+  
 end
 
 class EscapePod < Scene
