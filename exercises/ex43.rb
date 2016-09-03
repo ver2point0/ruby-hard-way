@@ -162,23 +162,23 @@ class TheBridge < Scene
     action = $stdin.gets.chomp
     
     if (action == "throw the bomb")
-      puts ""
-      puts ""
-      puts ""
-      puts ""
-      puts ""
-      puts ""
+      puts "In a panic you throw the bomb at the group of Gothons"
+      puts "and make a leap for the door. Right as you drop it a"
+      puts "Gothon shoots you right in the back killing you."
+      puts "As you die you see another Gothon frantically try to disarm"
+      puts "the bomb. You die knowing they will probably blow up when"
+      puts "it goes off."
       return 'death'
       
     elsif (action == "slowly place the bomb")
-      puts ""
-      puts ""
-      puts ""
-      puts ""
-      puts ""
-      puts ""
-      puts ""
-      puts ""
+      puts "You point your blaster at the bomb under you arm"
+      puts "and the Gothons put their hands up and start to sweat."
+      puts "You inch backward to the door, open it, and then carefully"
+      puts "place the bomb on the floor, pointing your blaster at it."
+      puts "You then jump back through the door, punch the close button"
+      puts "and blast the lock so the Gothons can't get out."
+      puts "Now that the bomb is placed you run to the escape pod to"
+      puts "get off this tin can."
       return 'escape_pod'
     else
       puts "DOES NOT COMPUTE"
