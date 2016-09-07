@@ -191,6 +191,18 @@ end
 class EscapePod < Scene
   
   def enter()
+    puts "You rush through hte ship desperately trying to make it to"
+    puts "the escape pod before the whole shipe explodes. It seems"
+    puts "hardly any Gothonds are on the ship, so your run in clear of"
+    puts "interference. You get to the chamber with the escape pods, and"
+    puts "now need to pick one to take. Some of them could be damaged"
+    puts "but you don't have time to look. There's 5 pods, which one"
+    puts "do you take?"
+    
+    good_pod = rand(1..5)
+    print "[pod #]> "
+    guess = $stdin.gets.chomp.to_i
+    
   end
 end
 
