@@ -203,6 +203,18 @@ class EscapePod < Scene
     print "[pod #]> "
     guess = $stdin.gets.chomp.to_i
     
+    if (guess != good_pod)
+      puts "You jump into pod %s and hit the eject button." % guess
+      puts "The pod escapes out into the void of space, then"
+      puts "implodes as the hull ruptures, crushing your body"
+      puts "into jam jelly."
+      return 'death'
+    else
+      puts ""
+      
+      return 'finished'
+    end
+    
   end
 end
 
