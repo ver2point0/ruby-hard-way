@@ -210,7 +210,12 @@ class EscapePod < Scene
       puts "into jam jelly."
       return 'death'
     else
-      puts ""
+      puts "You jump into pod %s and hit the eject button." % guess
+      puts "The pod easily slides out into space heading to"
+      puts "the planet below. As it flies to the planet, you look"
+      puts "back and see your ship implode then explode like a"
+      puts "bright start, taking out the Gothon ship at the same"
+      puts "time. You won!"
       
       return 'finished'
     end
