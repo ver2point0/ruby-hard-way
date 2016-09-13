@@ -241,9 +241,12 @@ class Map
   }
   
   def initialize(start_scene)
+    @start_scene = start_scene
   end
   
   def next_scene(scene_name)
+    val = @@scenes[scene_name]
+    return val
   end
   
   def opening_scene()
