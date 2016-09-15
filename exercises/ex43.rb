@@ -250,6 +250,7 @@ class Map
   end
   
   def opening_scene()
+    return next_scene(@start_scene)
   end
 end
 
