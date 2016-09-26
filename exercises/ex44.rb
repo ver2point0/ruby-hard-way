@@ -60,3 +60,72 @@ son3 = ChildThree.new()
 
 dad3.altered()
 son3.altered()
+
+# all three combined
+class P4
+  
+  def override()
+    puts "parent override()"
+  end
+  
+  def implicit()
+    puts "parent implicit()"
+  end
+  
+  def altered()
+    puts "Parent altered()"
+  end
+end
+
+
+class C4 < P4
+
+  def override()
+    puts "child override()"
+  end
+  
+  def altered()
+    puts "child, before parent altered()"
+    super()
+    puts "child, after parent altered()"
+  end
+end
+
+p4 = P4.new()
+c4 = C4.new()
+
+p4.implicit()
+c4.implicit()
+
+p4.override()
+c4.override()
+
+p4.altered()
+c4.altered()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
