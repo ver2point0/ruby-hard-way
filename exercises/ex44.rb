@@ -1,65 +1,65 @@
-# # Implicit inheritance
+# Implicit inheritance
 
-# class Parent
+class Parent
   
-#   def implicit()
-#     puts "PARENT implicit()"
-#   end
-# end
+  def implicit()
+    puts "PARENT implicit()"
+  end
+end
 
-# class Child < Parent
-# end
+class Child < Parent
+end
 
-# dad = Parent.new()
-# son = Child.new()
+dad = Parent.new()
+son = Child.new()
 
-# dad.implicit()
-# son.implicit()
+dad.implicit()
+son.implicit()
 
-# # override explicitly
+# override explicitly
 
-# class ParentTwo
+class ParentTwo
   
-#   def override()
-#     puts "PARENT override()"
-#   end
-# end
+  def override()
+    puts "PARENT override()"
+  end
+end
 
-# class ChildTwo < ParentTwo
+class ChildTwo < ParentTwo
   
-#   def override()
-#     puts "CHILD override()"
-#   end
-# end
+  def override()
+    puts "CHILD override()"
+  end
+end
 
-# dad2 = ParentTwo.new()
-# son2 = ChildTwo.new()
+dad2 = ParentTwo.new()
+son2 = ChildTwo.new()
 
-# dad2.override()
-# son2.override()
+dad2.override()
+son2.override()
 
-# # after before or after
-# class ParentThree
+# after before or after
+class ParentThree
   
-#   def altered()
-#     puts "PARENT altered()"
-#   end
-# end
+  def altered()
+    puts "PARENT altered()"
+  end
+end
 
-# class ChildThree < ParentThree
+class ChildThree < ParentThree
   
-#   def altered() 
-#     puts "CHILD, BEFORE PARENT altered()"
-#     super()
-#     puts "CHILD, AFTER PARENT altered()"
-#   end
-# end
+  def altered() 
+    puts "CHILD, BEFORE PARENT altered()"
+    super()
+    puts "CHILD, AFTER PARENT altered()"
+  end
+end
 
-# dad3 = ParentThree.new()
-# son3 = ChildThree.new()
+dad3 = ParentThree.new()
+son3 = ChildThree.new()
 
-# dad3.altered()
-# son3.altered()
+dad3.altered()
+son3.altered()
 
 # all three combined
 class P4
@@ -113,10 +113,48 @@ c4.override()
 p4.altered()
 c4.altered()
 
+# composition
 
+class Other
+  
+  def override() 
+    puts "OTHER override()"
+  end
+  
+  def implicit()
+    puts "OTHER implicit()"
+  end
+  
+  def altered()
+    puts "OTHER altered()"
+  end
+end
 
+class CL
+  
+  def initialize()
+    @other = Other.new()
+  end
+  
+  def implicit()
+    @other.implicit()
+  end
+  
+  def override()
+    puts "child override()"
+  end
+  
+  def altered()
+    puts "child, before other altered()"
+    @other.altered()
+    puts "child, after other altered()"
+  end
+end
 
-
+cl = CL.new()
+cl.implicit()
+cl.override()
+cl.altered()
 
 
 
