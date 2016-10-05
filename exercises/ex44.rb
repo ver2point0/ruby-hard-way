@@ -156,7 +156,16 @@ cl.implicit()
 cl.override()
 cl.altered()
 
+# composition with a module
+module Another
+  
+end
 
+class AnotherChild
+  include Another
+  
+  
+end
 
 
 
