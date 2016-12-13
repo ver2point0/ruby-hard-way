@@ -156,16 +156,41 @@ cl.implicit()
 cl.override()
 cl.altered()
 
-# composition with a module
+# composition with a module and mixins
 module Another
   
+  def override()
+    puts "ANOTHER override()"
+  end
+  
+  def implicit()
+    puts "ANOTHER implicit()"
+  end
+  
+  def Another.altered()
+    puts "ANOTHER altered()"
+  end
 end
 
 class AnotherChild
   include Another
   
+  def override()
+    puts "ANOTHERCHILD override()"
+  end
   
+  def altered()
+    puts "ANOTHERCHILD, BEFORE ANOTHER altered()"
+    Another.altered()
+    puts "ANOTHERCHILD, AFTER ANOTHER altered()"
+  end
 end
+
+anonCl = AnotherChild.new()
+
+anonCl.implicit()
+anonCl.override()
+anonCl.altered()
 
 
 
